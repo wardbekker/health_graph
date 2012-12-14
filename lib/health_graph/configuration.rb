@@ -26,6 +26,7 @@ module HealthGraph
       :new_fitness_activity => "application/vnd.com.runkeeper.NewFitnessActivity+json",      
       :strength_training_activity_feed => "application/vnd.com.runkeeper.StrengthTrainingActivityFeed+json",
       :strength_training_activity => "application/vnd.com.runkeeper.StrengthTrainingActivity+json",    
+      :fitness_activity => "application/vnd.com.runkeeper.FitnessActivity+json",
       :background_activity_feed => "application/vnd.com.runkeeper.BackgroundActivityFeed+json",
       :background_activity => "application/vnd.com.runkeeper.BackgroundActivity+json",
       :sleep_feed => "application/vnd.com.runkeeper.SleepFeed+json", 
