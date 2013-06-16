@@ -11,3 +11,5 @@ group :development do
   gem "simplecov"
   gem "jeweler"
 end
+
+gem 'coveralls', require: false
