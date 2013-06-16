@@ -1,6 +1,6 @@
 = health_graph
 
-{<img src="https://secure.travis-ci.org/endoze/health_graph.png?branch=master" alt="Build Status" />[http://travis-ci.org/endoze/health_graph?branch=master]
+{<img src="https://travis-ci.org/endoze/health_graph.png?branch=master" />}[https://travis-ci.org/endoze/health_graph]
 
 Ruby gem to work with RunKeeper Health Graph API.  More information about RunKeeper Health Graph API http://developer.runkeeper.com/healthgraph.
 
