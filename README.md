@@ -1,7 +1,7 @@
 # health_graph
 
 [![Build
-Status](https://travis-ci.org/endoze/health_graph.png?branch=master")](https://travis-ci.org/endoze/health_graph
+Status](https://travis-ci.org/endoze/health_graph.png?branch=master")](https://travis-ci.org/endoze/health_graph)
 [![Dependency
 Status](https://gemnasium.com/endoze/health_graph.png)](https://gemnasium.com/endoze/health_graph)
 [![Coverage
