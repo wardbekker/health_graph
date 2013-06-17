@@ -8,3 +8,9 @@ rvm:
 script: 
   - bundle install
   - bundle exec rake test
+notifications:
+  email:
+    recipients:
+      - chris@wideeyelabs.com
+    on_success: change
+    on_failure: always
