@@ -41,7 +41,8 @@ module HealthGraph
       :diatetes_measurement => "application/vnd.com.runkeeper.DiabetesMeasurement+json",  
       :records => "application/vnd.com.runkeeper.Records+json",
       :profile => "application/vnd.com.runkeeper.Profile+json",
-      :settings => "application/vnd.com.runkeeper.Settings+json"
+      :settings => "application/vnd.com.runkeeper.Settings+json",
+      :change_log => "application/vnd.com.runkeeper.ChangeLog+json"
     }.freeze
   
     attr_accessor *VALID_OPTIONS_KEYS

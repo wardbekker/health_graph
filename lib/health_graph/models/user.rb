@@ -50,5 +50,10 @@ module HealthGraph
     def strength_training_activities params = {}
       HealthGraph::StrengthTrainingActivitiesFeed.new self.access_token, self.body["strength_training_activities"], params
     end
+
+    def change_log params = {}
+      HealthGraph::ChangeLog.new self.access_token, self.body["change_log"], params
+    end
+
   end
 end
