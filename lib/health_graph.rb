@@ -17,6 +17,7 @@ require 'health_graph/models/fitness_activity_update'
 require 'health_graph/models/fitness_activity_delete'
 require 'health_graph/models/settings'
 require 'health_graph/models/change_log'
+require 'health_graph/models/root_resource'
 
 module HealthGraph
   extend Configuration 

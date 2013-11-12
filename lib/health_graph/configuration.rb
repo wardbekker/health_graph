@@ -42,7 +42,8 @@ module HealthGraph
       :records => "application/vnd.com.runkeeper.Records+json",
       :profile => "application/vnd.com.runkeeper.Profile+json",
       :settings => "application/vnd.com.runkeeper.Settings+json",
-      :change_log => "application/vnd.com.runkeeper.ChangeLog+json"
+      :change_log => "application/vnd.com.runkeeper.ChangeLog+json",
+      :root => "application/vnd.com.runkeeper.Root+json"
     }.freeze
   
     attr_accessor *VALID_OPTIONS_KEYS

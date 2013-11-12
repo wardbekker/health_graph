@@ -1,6 +1,6 @@
 module HealthGraph
   module API
-    attr_accessor :access_token
+    attr_accessor :access_token, :access_type
     
     def get(path, accept_header, params = {})
       request(:get, accept_header, path, params)
@@ -22,7 +22,11 @@ module HealthGraph
     
     def request(method, accept_header, path, params)
       response = connection(method).send(method) do |request|
-        request.headers['Authorization'] = "Bearer #{access_token}"
+        unless access_type.nil?
+          request.headers['Authorization'] = "Basic #{access_token}"
+        else
+          request.headers['Authorization'] = "Bearer #{access_token}"
+        end
         
         case method.to_sym
         when :get, :delete
