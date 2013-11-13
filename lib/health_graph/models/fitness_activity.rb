@@ -2,7 +2,7 @@ module HealthGraph
   class FitnessActivity
     include Model              
     
-    hash_attr_accessor :uri, :start_time, :climb, :total_calories
+    hash_attr_accessor :uri, :start_time, :climb, :total_calories, :path, :distance, :duration
     
     def initialize(access_token, path)            
       self.access_token = access_token
