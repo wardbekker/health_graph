@@ -3,16 +3,6 @@ module HealthGraph
     include Model              
     
     hash_attr_accessor :items, :next, :previous, :size
-    
-    class Item 
-      include Model      
-      
-      hash_attr_accessor :type, :start_time, :total_distance, :duration, :uri
-      
-      def initialize(hash) 
-        populate_from_hash! hash
-      end      
-    end
                       
     def initialize(access_token, path, params = {})            
       self.access_token = access_token
