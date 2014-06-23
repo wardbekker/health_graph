@@ -22,6 +22,10 @@ module HealthGraph
     def weight
       HealthGraph::WeightFeed.new self.access_token, self.body["weight"]
     end
+
+    def general_measurements
+      HealthGraph::GeneralMeasurementFeed.new self.access_token, self.body["general_measurements"]
+    end
     
     def sleep
       HealthGraph::SleepFeed.new self.access_token, self.body["sleep"]
