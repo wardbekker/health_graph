@@ -2,7 +2,7 @@ module HealthGraph
   class WeightFeed
     include Model              
     
-    hash_attr_accessor :items
+    hash_attr_accessor :items, :next
     
     class Item 
       include Model      
