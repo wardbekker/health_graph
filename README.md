@@ -1,14 +1,5 @@
 # health_graph
 
-[![Build
-Status](https://travis-ci.org/endoze/health_graph.png?branch=master)](https://travis-ci.org/endoze/health_graph)
-[![Dependency
-Status](https://gemnasium.com/endoze/health_graph.png)](https://gemnasium.com/endoze/health_graph)
-[![Coverage
-Status](https://coveralls.io/repos/endoze/health_graph/badge.png?branch=master)](https://coveralls.io/r/endoze/health_graph?branch=master)
-[![Code
-Climate](https://codeclimate.com/github/endoze/health_graph.png)](https://codeclimate.com/github/endoze/health_graph)
-
 Ruby gem to work with RunKeeper Health Graph API.  More information about RunKeeper Health Graph API http://developer.runkeeper.com/healthgraph.
 
 ## Usage
