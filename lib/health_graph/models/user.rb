@@ -18,6 +18,10 @@ module HealthGraph
     def settings
       HealthGraph::Settings.new self.access_token, self.body["settings"]
     end
+
+    def nutrition
+      HealthGraph::NutritionFeed.new self.access_token, self.body["nutrition"]
+    end
     
     def weight
       HealthGraph::WeightFeed.new self.access_token, self.body["weight"]

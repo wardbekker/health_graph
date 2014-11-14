@@ -13,8 +13,7 @@ Gem::Specification.new do |s|
   s.description = "This is a wrapper for RunKeeper Health Graph RESTful API."
   s.email = "kenny@kennyma.me"
   s.extra_rdoc_files = [
-    "LICENSE.txt",
-    "README.rdoc"
+    "LICENSE.txt"
   ]
   s.files = [
     ".document",
