@@ -1,6 +1,6 @@
 require 'helper'
 
-class TestHealthGraph < Test::Unit::TestCase
+class TestHealthGraph < Minitest::Test
   context "Health Graph" do
     setup do
       HealthGraph.reset

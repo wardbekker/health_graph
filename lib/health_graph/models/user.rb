@@ -22,6 +22,10 @@ module HealthGraph
     def nutrition
       HealthGraph::NutritionFeed.new self.access_token, self.body["nutrition"]
     end
+
+    def background_activities
+      HealthGraph::BackgroundActivitiesFeed.new self.access_token, self.body["background_activities"]
+    end
     
     def weight
       HealthGraph::WeightFeed.new self.access_token, self.body["weight"]
