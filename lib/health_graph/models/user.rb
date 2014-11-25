@@ -19,12 +19,12 @@ module HealthGraph
       HealthGraph::Settings.new self.access_token, self.body["settings"]
     end
 
-    def nutrition
-      HealthGraph::NutritionFeed.new self.access_token, self.body["nutrition"]
+    def nutrition(params={})
+      HealthGraph::NutritionFeed.new self.access_token, self.body["nutrition"], params
     end
 
-    def background_activities
-      HealthGraph::BackgroundActivitiesFeed.new self.access_token, self.body["background_activities"]
+    def background_activities(params={})
+      HealthGraph::BackgroundActivitiesFeed.new self.access_token, self.body["background_activities"], params
     end
     
     def weight
