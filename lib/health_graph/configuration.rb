@@ -36,8 +36,6 @@ module HealthGraph
       :weight => "application/vnd.com.runkeeper.Weight+json",
       :general_measurement_feed => "application/vnd.com.runkeeper.GeneralMeasurementSetFeed+json",
       :general_measurement => "application/vnd.com.runkeeper.GeneralMeasurement+json",
-      :diabetes_measurement_feed => "application/vnd.com.runkeeper.DiabetesMeasurementSetFeed+json",
-      :diabetes_measurement => "application/vnd.com.runkeeper.DiabetesMeasurement+json",
       :diabetes_feed => "application/vnd.com.runkeeper.DiabetesFeed+json",
       :diatetes_measurement => "application/vnd.com.runkeeper.DiabetesMeasurement+json",  
       :records => "application/vnd.com.runkeeper.Records+json",

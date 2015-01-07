@@ -35,8 +35,8 @@ module HealthGraph
       HealthGraph::GeneralMeasurementFeed.new self.access_token, self.body["general_measurements"]
     end
     
-    def diabetes_measurements
-      HealthGraph::DiabetesMeasurementFeed.new self.access_token, self.body["diabetes_measurements"]
+    def diabetes
+      HealthGraph::DiabetesFeed.new self.access_token, self.body["diabetes"]
     end
     
     def sleep

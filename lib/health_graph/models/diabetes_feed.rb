@@ -1,5 +1,5 @@
 module HealthGraph
-  class DiabetesMeasurementFeed
+  class DiabetesFeed
     include Model              
     
     hash_attr_accessor :items, :next
@@ -16,7 +16,7 @@ module HealthGraph
                       
     def initialize(access_token, path)            
       self.access_token = access_token
-      response = get path, HealthGraph.accept_headers[:diabetes_measurement_feed]
+      response = get path, HealthGraph.accept_headers[:diabetes_feed]
       self.body = response.body
       populate_from_hash! self.body                  
     end                           
