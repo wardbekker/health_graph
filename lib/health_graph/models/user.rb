@@ -27,20 +27,20 @@ module HealthGraph
       HealthGraph::BackgroundActivitiesFeed.new self.access_token, self.body["background_activities"], params
     end
     
-    def weight
-      HealthGraph::WeightFeed.new self.access_token, self.body["weight"]
+    def weight(params={})
+      HealthGraph::WeightFeed.new self.access_token, self.body["weight"], params
     end
 
-    def general_measurements
-      HealthGraph::GeneralMeasurementFeed.new self.access_token, self.body["general_measurements"]
+    def general_measurements(params={})
+      HealthGraph::GeneralMeasurementFeed.new self.access_token, self.body["general_measurements"], params
     end
     
-    def diabetes
-      HealthGraph::DiabetesFeed.new self.access_token, self.body["diabetes"]
+    def diabetes(params={})
+      HealthGraph::DiabetesFeed.new self.access_token, self.body["diabetes"], params
     end
     
-    def sleep
-      HealthGraph::SleepFeed.new self.access_token, self.body["sleep"]
+    def sleep(params={})
+      HealthGraph::SleepFeed.new self.access_token, self.body["sleep"], params
     end
     
     def fitness_activities params = {}
