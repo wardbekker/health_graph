@@ -7,6 +7,9 @@ module HealthGraph
     def initialize(access_token)            
       self.access_token = access_token
       response = get "user", HealthGraph.accept_headers[:user]
+      if response.body.reason
+        raise response.body.reason
+      end
       self.body = response.body
       populate_from_hash! self.body      
     end

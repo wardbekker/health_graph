@@ -17,6 +17,9 @@ module HealthGraph
     def initialize(access_token, path, params = {})            
       self.access_token = access_token
       response = get path, HealthGraph.accept_headers[:strength_training_activity_feed], params
+      if response.body.reason
+        raise response.body.reason
+      end
       self.body = response.body
       populate_from_hash! self.body
     end

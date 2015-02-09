@@ -17,6 +17,9 @@ module HealthGraph
     def initialize(access_token, path)            
       self.access_token = access_token
       response = get path, HealthGraph.accept_headers[:sleep_feed]
+      if response.body.reason
+        raise response.body.reason
+      end
       self.body = response.body
       populate_from_hash! self.body                  
     end                           
