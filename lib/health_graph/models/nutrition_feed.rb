@@ -13,5 +13,9 @@ module HealthGraph
       self.body = response.body
       populate_from_hash! self.body
     end
+    
+    def next_page
+      NutritionFeed.new(self.access_token, self.next) if self.next
+    end
   end
 end
