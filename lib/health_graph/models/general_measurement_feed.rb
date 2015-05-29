@@ -4,7 +4,7 @@ module HealthGraph
 
     hash_attr_accessor :items, :next, :previous, :size
 
-    class Item 
+    class Item
       include Model
 
       hash_attr_accessor :timestamp, :systolic, :diastolic

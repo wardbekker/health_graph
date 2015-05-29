@@ -3,13 +3,13 @@ module HealthGraph
     include API
 
     attr_accessor :body
-    
+
     def self.included(includer)
       includer.extend ClassMethods
     end
 
     module ClassMethods
-      def from_hash(hash) 
+      def from_hash(hash)
         instance = new(hash)
         yield instance if block_given?
         instance
@@ -41,7 +41,7 @@ module HealthGraph
 
     def populate_from_hash!(hash)
       return unless hash
-      
+
       hash.each do |key, value|
         set_attr_method = "#{key}="
         unless value.nil?

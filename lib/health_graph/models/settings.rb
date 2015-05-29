@@ -11,7 +11,7 @@ module HealthGraph
     end
 
     def elite?
-      self.body["elite"] == "true"
+      self.body['elite'] == 'true'
     end
   end
 end

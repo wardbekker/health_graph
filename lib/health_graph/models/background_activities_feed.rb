@@ -1,7 +1,7 @@
 module HealthGraph
   class BackgroundActivitiesFeed
     include Model
-    
+
     hash_attr_accessor :items, :next, :previous, :size
 
     def initialize(access_token, path, params = {})

@@ -6,10 +6,10 @@ module HealthGraph
 
     class Item
       include Model
-      
+
       hash_attr_accessor :start_time, :uri
-      
-      def initialize(hash) 
+
+      def initialize(hash)
         populate_from_hash! hash
       end
     end

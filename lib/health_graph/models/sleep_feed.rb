@@ -11,7 +11,7 @@ module HealthGraph
 
       def initialize(hash)
         populate_from_hash! hash
-      end      
+      end
     end
 
     def initialize(access_token, path, params = {})

@@ -14,10 +14,10 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'health_graph'
 
 class Minitest::Test
-  TEST_USER_TOKEN = "b9aaf2581480432a939a72f894bf".freeze
+  TEST_USER_TOKEN = 'b9aaf2581480432a939a72f894bf'.freeze
 
   def fixture(file)
-    path = File.expand_path("../fixtures", __FILE__)
+    path = File.expand_path('../fixtures', __FILE__)
     File.new(path + '/' + file)
   end
 

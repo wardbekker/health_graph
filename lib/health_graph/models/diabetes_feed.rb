@@ -4,14 +4,14 @@ module HealthGraph
 
     hash_attr_accessor :items, :next, :previous, :size
 
-    class Item 
+    class Item
       include Model
-      
+
       hash_attr_accessor :timestamp, :fasting_plasma_glucose_test, :oral_glucose_tolerance_test, :random_plasma_glucose_test
 
       def initialize(hash)
         populate_from_hash! hash
-      end      
+      end
     end
 
     def initialize(access_token, path, params = {})

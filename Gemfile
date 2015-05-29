@@ -1,9 +1,9 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "oauth2", ">= 0.5.2"
-gem "faraday", ">= 0.7.4"
-gem "faraday_middleware", ">= 0.7.8"
-gem "hashie", ">= 1.2"
+gem 'oauth2', '>= 0.5.2'
+gem 'faraday', '>= 0.7.4'
+gem 'faraday_middleware', '>= 0.7.8'
+gem 'hashie', '>= 1.2'
 
 gem 'coveralls', require: false
 
