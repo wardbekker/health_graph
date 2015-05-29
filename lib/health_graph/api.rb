@@ -23,7 +23,7 @@ module HealthGraph
     def request(method, accept_header, path, params)
       response = connection(method).send(method) do |request|
         request.headers['Authorization'] = "Bearer #{access_token}"
-        
+
         case method.to_sym
         when :get, :delete
           request.headers['Accept'] = accept_header          
@@ -34,6 +34,10 @@ module HealthGraph
           request.body = params.to_json unless params.empty?
         end        
       end
+
+      raise 'Empty response body' if response.body.nil?
+      raise response.body.reason if response.body.reason
+
       response
     end
     
