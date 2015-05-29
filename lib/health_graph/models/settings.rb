@@ -1,19 +1,15 @@
 module HealthGraph
   class Settings
-    include Model              
-    
+    include Model
+
     hash_attr_accessor :distance_units, :weight_units
-    
-    def initialize(access_token, path)            
-      self.access_token = access_token
-      response = get path, HealthGraph.accept_headers[:settings]
-      if response.body.reason
-        raise response.body.reason
+
+    def initialize(access_token, path)
+      populate_from_request!(access_token) do
+        get path, HealthGraph.accept_headers[:settings]
       end
-      self.body = response.body
-      populate_from_hash! self.body
-    end                   
-    
+    end
+
     def elite?
       self.body["elite"] == "true"
     end

@@ -5,14 +5,15 @@ require 'simplecov'
 SimpleCov.start
 
 require 'test/unit'
+require 'minitest/autorun'
 require 'shoulda'
-require 'webmock/test_unit'
+require 'webmock/minitest'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'health_graph'
 
-class Test::Unit::TestCase
+class Minitest::Test
   TEST_USER_TOKEN = "b9aaf2581480432a939a72f894bf".freeze
 
   def fixture(file)
