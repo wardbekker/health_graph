@@ -74,7 +74,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<oauth2>, ['~> 0.5', '>= 0.5.2'])
       s.add_runtime_dependency(%q<faraday>, ['~> 0.7', '>= 0.7.4'])
       s.add_runtime_dependency(%q<faraday_middleware>, ['~> 0.7', '>= 0.7.8'])
-      s.add_runtime_dependency(%q<hashie>, ['~> 1.2', '>= 1.2'])
+      s.add_runtime_dependency(%q<hashie>, ['>= 1.2'])
       s.add_runtime_dependency(%q<webmock>, ['~> 1.7', '>= 1.7.6'])
     else
       s.add_dependency(%q<shoulda>, ['>= 0'])
