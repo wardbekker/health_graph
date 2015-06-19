@@ -1,6 +1,8 @@
 module HealthGraph
   module API
 
+    attr_accessor :access_token, :access_type
+
     def get(path, accept_header, params = {})
       request(:get, accept_header, path, params)
     end
