@@ -14,11 +14,14 @@ require 'health_graph/models/sleep_feed'
 require 'health_graph/models/fitness_activities_feed'
 require 'health_graph/models/general_measurement_feed'
 require 'health_graph/models/diabetes_feed'
+require 'health_graph/models/fitness_activity'
 require 'health_graph/models/strength_training_activities_feed'
 require 'health_graph/models/new_fitness_activity'
 require 'health_graph/models/fitness_activity_update'
 require 'health_graph/models/fitness_activity_delete'
 require 'health_graph/models/settings'
+require 'health_graph/models/change_log'
+require 'health_graph/models/root_resource'
 
 module HealthGraph
   extend Configuration

@@ -20,6 +20,7 @@ module HealthGraph
     DEFAULT_ADAPTER = :net_http
     DEFAULT_FARADAY_OPTIONS = {}.freeze
     DEFAULT_ACCEPT_HEADERS = {
+<<<<<<< HEAD
       user: 'application/vnd.com.runkeeper.User+json',
       fitness_activity_feed: 'application/vnd.com.runkeeper.FitnessActivityFeed+json',
       fitness_activity: 'application/vnd.com.runkeeper.FitnessActivity+json',
@@ -40,7 +41,9 @@ module HealthGraph
       diatetes_measurement: 'application/vnd.com.runkeeper.DiabetesMeasurement+json',
       records: 'application/vnd.com.runkeeper.Records+json',
       profile: 'application/vnd.com.runkeeper.Profile+json',
-      settings: 'application/vnd.com.runkeeper.Settings+json'
+      settings: 'application/vnd.com.runkeeper.Settings+json',
+      change_log: => "application/vnd.com.runkeeper.ChangeLog+json",
+      root: "application/vnd.com.runkeeper.Root+json"
     }.freeze
 
     attr_accessor *VALID_OPTIONS_KEYS
